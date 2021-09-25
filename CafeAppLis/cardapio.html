@@ -42,10 +42,53 @@
 
   </header>
   <main>
+    <!--my-3 = espaçamento entre as margens dos elementos-->
     <section class="my-3">
 
       <!-- Grid -->
       <div class="container">
+        <!-- Botão para inserir elementos -->
+        <button type="button" class="btn btn-secondary rounded-circle" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          +
+        </button>
+        <!-- Modal(reponsavel por adicionar o novo elemento) -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Adicionar Novo Item</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <h5>Nome</h5>
+                <input type="text" class="form-control">
+              </div>
+
+              <div class="modal-body">
+                <h5>Descrição</h5>
+                <input type="text" class="form-control">
+              </div>
+              <div class="modal-body">
+                <h5>Preço</h5>
+                <input type="text" class="form-control">
+              </div>
+              <div class="modal-body">
+                <h5>Endereço da Imagem</h5>
+                <input type="text" class="form-control">
+              </div>
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-success" class="btn btn-primary"> Adicionar </button>
+                <button type="button" class="btn btn-warning">
+                  Limpar
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Linha -->
         <div id="itens-cardapio" class="row">
